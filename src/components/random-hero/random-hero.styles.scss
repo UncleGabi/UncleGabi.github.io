@@ -1,0 +1,21 @@
+.hero-data {
+  height: 100%;
+  color: wheat;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: -10%;
+  right: 15px;
+  margin: 10px;
+
+  h1 {
+    color: #aa7022;
+  }
+
+  img {
+    height: 30%;
+    width: 40%;
+  }
+}
