@@ -48,10 +48,6 @@ class App extends React.Component {
     });
   };
 
-  handleClick = () => {
-    $(".siege-data").toggleClass("transformed");
-  };
-
   render() {
     const { inputClicked, ourSiege } = this.state;
     return (
