@@ -1,5 +1,5 @@
 import React from "react";
-import { makeStyles } from "@material-ui/core/styles";
+// import { makeStyles } from "@material-ui/core/styles";
 import Table from "@material-ui/core/Table";
 import TableBody from "@material-ui/core/TableBody";
 import TableCell from "@material-ui/core/TableCell";
@@ -12,7 +12,9 @@ import "./garrison-cost-table.styles.scss";
 
 // const useStyles = makeStyles({
 //   header: {
-//     backgroundColor: "#CCC",
+//     backgroundColor: "#FFF",
+//     fontWeight: "bold",
+//     fontSize: "16px",
 //   },
 // });
 
@@ -23,37 +25,63 @@ export default function BasicTable({ siege }) {
     <div className="table">
       <TableContainer component={Paper}>
         <Table aria-label="simple table">
-          <TableHead style={{ backgroundColor: "#000" }}>
+          <TableHead style={{ backgroundColor: "#aa7022" }}>
             <TableRow>
-              <TableCell style={{ color: "white" }} align="center">
+              <TableCell
+                style={{ color: "white", fontWeight: "bold", fontSize: "16px" }}
+                align="center"
+              >
                 Garrison
               </TableCell>
-              <TableCell style={{ color: "white" }} align="center">
+              <TableCell
+                style={{ color: "white", fontWeight: "bold", fontSize: "16px" }}
+                align="center"
+              >
                 Gold
               </TableCell>
-              <TableCell style={{ color: "white" }} align="center">
+              <TableCell
+                style={{ color: "white", fontWeight: "bold", fontSize: "16px" }}
+                align="center"
+              >
                 Wood
               </TableCell>
-              <TableCell style={{ color: "white" }} align="center">
+              <TableCell
+                style={{ color: "white", fontWeight: "bold", fontSize: "16px" }}
+                align="center"
+              >
                 Ore
               </TableCell>
-              <TableCell style={{ color: "white" }} align="center">
+              <TableCell
+                style={{ color: "white", fontWeight: "bold", fontSize: "16px" }}
+                align="center"
+              >
                 Crystal
               </TableCell>
-              <TableCell style={{ color: "white" }} align="center">
+              <TableCell
+                style={{ color: "white", fontWeight: "bold", fontSize: "16px" }}
+                align="center"
+              >
                 Gem
               </TableCell>
-              <TableCell style={{ color: "white" }} align="center">
+              <TableCell
+                style={{ color: "white", fontWeight: "bold", fontSize: "16px" }}
+                align="center"
+              >
                 Mercury
               </TableCell>
-              <TableCell style={{ color: "white" }} align="center">
+              <TableCell
+                style={{ color: "white", fontWeight: "bold", fontSize: "16px" }}
+                align="center"
+              >
                 Sulfur
               </TableCell>
             </TableRow>
           </TableHead>
           <TableBody>
             <TableRow key={siege.id}>
-              <TableCell align="center">Basic</TableCell>
+              <TableCell style={{ fontWeight: "bold" }} align="center">
+                Basic
+              </TableCell>
               <TableCell align="center">{siege.resources.basic.gold}</TableCell>
               <TableCell align="center">{siege.resources.basic.wood}</TableCell>
               <TableCell align="center">{siege.resources.basic.ore}</TableCell>
@@ -69,7 +97,9 @@ export default function BasicTable({ siege }) {
               </TableCell>
             </TableRow>
             <TableRow>
-              <TableCell align="center">Upgrades</TableCell>
+              <TableCell style={{ fontWeight: "bold" }} align="center">
+                Upgrades
+              </TableCell>
               <TableCell align="center">
                 {siege.resources.upgrades.gold}
               </TableCell>
@@ -93,7 +123,9 @@ export default function BasicTable({ siege }) {
               </TableCell>
             </TableRow>
             <TableRow>
-              <TableCell align="center">All</TableCell>
+              <TableCell style={{ fontWeight: "bold" }} align="center">
+                All
+              </TableCell>
               <TableCell align="center">{siege.resources.all.gold}</TableCell>
               <TableCell align="center">{siege.resources.all.wood}</TableCell>
               <TableCell align="center">{siege.resources.all.ore}</TableCell>
@@ -107,7 +139,9 @@ export default function BasicTable({ siege }) {
               <TableCell align="center">{siege.resources.all.sulfur}</TableCell>
             </TableRow>
             <TableRow>
-              <TableCell align="center">Troops</TableCell>
+              <TableCell style={{ fontWeight: "bold" }} align="center">
+                Troops
+              </TableCell>
               <TableCell align="center">
                 {siege.resources.troops.gold}
               </TableCell>
